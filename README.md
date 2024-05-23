@@ -14,3 +14,9 @@ Aprendi muito usando NestJS, Prisma, e aplicando TDD.
 Agora, quero recomeçar usando o simples e eficiente: Apenas NodeJS/TS + DiscordJS.
 
 Vamos ver o que dá =)
+
+### Todo
+[] - Usar algum ORM pra ter controle de migrations (typeorm probably)
+    - https://dev.to/wandealves/migrations-com-typeorm-no-nodejs-4i80
+
+[] - Definir layers (models, entities, services, etc)
