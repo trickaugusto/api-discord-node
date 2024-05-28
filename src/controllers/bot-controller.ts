@@ -1,11 +1,17 @@
+import { Request, Response } from "express";
 import BotService from "../services/bot-service";
 
 class BotController {
-  constructor(private botService: BotService) {}
+  private botService: BotService;
 
-  async getAllBots() {
-    return this.botService.getBot();
+  constructor(botService: BotService) {
+    this.botService = botService;
   }
+
+  getAllBots = async (_: Request, res: Response) => {
+    const bots = await this.botService.getBot();
+    res.send(bots);
+  };
 }
 
 export default BotController;
